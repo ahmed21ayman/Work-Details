@@ -2,6 +2,12 @@ public class App {
     interface Worker{
         void work();
     }
+
+    static class Designer implements Worker{
+        public void work(){
+            System.out.println("design the project");
+        } 
+    }
     static class Developer implements Worker{
         public void work(){
             System.out.println("writing code");
