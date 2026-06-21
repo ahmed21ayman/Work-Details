@@ -27,6 +27,13 @@ public class App {
     }
 
     public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
+        Worker m1 = new Manager();
+        m1.work();
+        Worker d1 = new Designer();
+        d1.work();
+        Worker dev1 = new Developer();
+        dev1.work();
+        Worker t1 = new Tester();
+        t1.work();
     }
 }
