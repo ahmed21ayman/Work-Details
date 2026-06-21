@@ -3,6 +3,12 @@ public class App {
         void work();
     }
 
+    static class Manager implements Worker{
+        public void work(){
+            System.out.println("manage projects");
+        }
+    }
+
     static class Designer implements Worker{
         public void work(){
             System.out.println("design the project");
